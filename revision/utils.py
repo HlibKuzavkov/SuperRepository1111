@@ -27,7 +27,7 @@ def is_valid_email(value: str) -> bool:
 def avg(values: list[float]) -> float:
     if not values:
         raise ValueError('list can not be empty')
-    return sum(values)/len(values)
+    return round((sum(values)/len(values)), 2)
 
 def uah_to_usd(amount: float, rate: float) -> float:
     """
@@ -36,4 +36,4 @@ def uah_to_usd(amount: float, rate: float) -> float:
     """
     if amount<=0 or rate <=0:
         raise ValueError('values cant be negative or 0')
-    return amount*rate
+    return round((amount/rate), 2)
