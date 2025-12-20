@@ -1,0 +1,1 @@
+jwt_secret = 'cneuvnrejvn383bfju4875hfmmd74'
